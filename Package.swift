@@ -4,7 +4,10 @@ import PackageDescription
 let package = Package(
     name: "MapboxNavigation",
     products: [
-        .executable(name: "MapboxNavigation", targets: ["MapboxNavigation"]),
+        .library(
+            name: "MapboxNavigation",
+            targets: ["MapboxNavigation"]
+        ),
     ],
     dependencies: [
         // Dépendances à d'autres packages.
