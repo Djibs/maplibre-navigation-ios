@@ -16,7 +16,13 @@ let package = Package(
     targets: [
         .target(
             name: "MapboxNavigation",
-            dependencies: []),
+            dependencies: [
+                "MapboxGeocoder",
+                "MapboxDirections",
+                "Turf",
+                "Solar"
+            ]
+        ),
         .testTarget(
             name: "MapboxNavigationTests",
             dependencies: ["MapboxNavigation"]),
